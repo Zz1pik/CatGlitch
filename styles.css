@@ -2,9 +2,14 @@
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 1200px;
-	margin: 0 auto; 
+	margin: 0 auto;
+    position: relative;
 }
 
 body {
@@ -16,9 +21,26 @@ body {
 }
 
 header {
-    display: block;
-    position: relative;
 	background-color: #178ba5;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+}
+
+footer {
+    background-color: black;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+    height: 200px;
+}
+
+footer #menu>a {
+    display: flex;
+    min-height: 50px;
+
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    margin-top: 15px;
 }
 
 #menu {
@@ -32,6 +54,7 @@ header {
 
 #menu>a {
     color: white;
+    font-size: 20px;
     text-decoration: none;
 	padding: 0px 80px;
 }
@@ -46,6 +69,14 @@ main {
     background-color: #714230;
     justify-content: center;
     flex-direction:  column;
+    border-bottom: 12px solid black;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+}
+
+main ul {
+    margin: 0 auto;
+    font-size: 20px;
 }
 
 #blackBorder {
@@ -57,14 +88,34 @@ main {
     font-weight: bold;
 }
 
-h3, p {
+h3, h2, h1, p, li {
     color: white;
 }
 
-main h3 {
+#downloadBtn {
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(0, 78, 0);
+    background-color: rgb(1, 136, 1);
+    padding: 25px 45px;
+    border-radius: 20px;
+}
+
+main h3, main h2, main h1 {
     text-align: center;
     font-weight: bold;
+}
+
+main h3 {
     font-size: 30px;
+}
+
+main h2 {
+    font-size: 27px;
+}
+
+main h1 {
+    font-size: 25px;
 }
 
 main p {
@@ -75,12 +126,33 @@ main p {
     width: 600px;
 }
 
+#requirements p {
+    text-align: left;
+    justify-content: left;
+    font-size: 20px;
+    width: 600px;
+}
 
+#roboZone {
+    height: 150px;
+}
+
+#robot {
+    left: 0;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    image-rendering: -moz-crisp-edges; 
+    -ms-interpolation-mode: nearest-neighbor; 
+    image-rendering: crisp-edges;
+    transform: scaleX(-1);
+}
 
 #screenshotPanel {
     width: 1000px;
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 #screenshotPanel .gallery {

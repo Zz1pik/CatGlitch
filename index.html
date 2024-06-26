@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <title>Cat Glitch</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/icon.png" />
     </head>
 
     <body>
         <header class="wrapper">
             <nav id="menu">
-                <a href="#info">Информация</a>
+                <a href="#info">Описание</a>
                 <a href="#screen">Скриншоты</a>
-                <a href="#">Скачать</a>
-                <a href="#">Поддержка</a>
+                <a href="#download">Скачать</a>
             </nav>
         </header>
 
@@ -21,9 +21,18 @@
 
             <div id="blackBorder"></div>
 
-            <h3><a name="info">Информация</a></h3>
+            <h3><a name="info">Описание</a></h3>
 
-            <p><span class="bigText">Cat Glitch</span> - это головоломка-платформер выполненный в пиксельной тематике. В данной игре вам предстоит играть за котика, который должен выбраться из глючной локации и вернуться домой! В этом ему помогут другие котики, но не за бесплатно, а за корм или за услуги.</p>
+            <p><span class="bigText">Cat Glitch</span> - это головоломка-платформер выполненный в пиксельной тематике. В данной игре вам предстоит играть за котика, который должен выбраться из глючной локации и вернуться домой! В этом ему помогут другие котики, но не за бесплатно, а за корм или за услуги. Также на вашем пути встретятся злобные роботы, которые всячески будут пытаться мешать.</p>
+            
+            <h2>Управление</h2>
+
+            <ul>
+                <li><span class="bigText">A, D</span> - Передвижение</li>
+                <li><span class="bigText">W</span> - Прыжок</li>
+                <li><span class="bigText">E</span> - Взаимодействие</li>
+                <li><span class="bigText">`</span> - Рестарт уровня</li>
+            </ul>
 
             <h3><a name="screen">Скриншоты</a></h3>
 
@@ -47,10 +56,34 @@
                 <img src="images/arrow_right.png" alt="right" id="rightBtn"></img>
             </div>
 
+            <h3><a id="downloadBtn" name="download" href="CatGlitch.zip" download>Скачать</a></h3>
+            <h2>Системные требования:</h2>
+            <h1>Windows</h1>
+
+            <div id="requirements">
+                <p><span class="bigText">ОС:</span> Windows 10 64bit</p>
+                <p><span class="bigText">Процессор:</span> x64 architecture with SSE2 instruction set support</p>
+                <p><span class="bigText">Оперативная память:</span> 1 GB ОЗУ</p>
+                <p><span class="bigText">Видеокарта:</span> DX11, DX12 capable</p>
+                <p><span class="bigText">Место на диске:</span> 50 MB</p>
+            </div>
+
+            <div id="roboZone"></div>
+
+            <img id="robot" src="images/robot.png"></img>
+
         </main>
 
         <footer class="wrapper">
+            <img src="images/footer.png"></img>
 
+            <nav id="menu">
+                <a href="#">Телеграмм</a>
+                <a href="#">Ютуб</a>
+                <a href="#">Вк группа</a>
+                <a href="#">Дискорд</a>
+                <a href="#">Донат</a>
+            </nav>
         </footer>
 
         <script src="scripts.js"></script>
